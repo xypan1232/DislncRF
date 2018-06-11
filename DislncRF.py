@@ -47,7 +47,6 @@ TRAIN_NUM = 50
 SCALEUP = 1.0
 SCALEDOWN = 1.0
 WINDOW_SIZE = 35
-DisGeNET_cutoff = 0.20
 parser = argparse.ArgumentParser(description="""infer disease-associated lncRNAs based on lncRNA and mRNA co-expression from RNAseq""")
 
 parser.add_argument('-ratio',
@@ -684,95 +683,7 @@ def coexpression_knn_based_prediction(disease_mRNA_data, mRNAlabels, disease_lnc
     #pdb.set_trace()        
     fw.write('\t'.join(map(str, y_ensem_pred)))
     fw.write('\n')
-'''
-def predict_lncRNA_using_mRNA(disease_mRNA_data, mRNAlabels, disease_lncRNA_data, lncRNA_list, mRNA_list, fw, ensg_ensp_map={}, 
-                            ratio = 5, SVM = False, roc_plot=False, weight =1, other_mRNA_list=None, gene_position_dict = None, 
-                            overlap_disease_mRNA_list = None, negative_from_other_disease = None, f_imp = None):
-    #data, labels, posi_size = get_multiple_data(disease_mRNA_data, mRNAlabels, ratio=ratio)
-    posi_nega_ratio = 1
-    #posi_data, nega_data, posi_size = get_multiple_data_based_mRNAs(mRNA_list, disease_mRNA_data, mRNAlabels, ensg_ensp_map, ratio=posi_nega_ratio*ratio)
-    #data, labels, posi_size =  get_multiple_data_based_mRNAs(mRNA_list, disease_mRNA_data, mRNAlabels, ensg_ensp_map, ratio=posi_nega_ratio*ratio, other_mRNA_list = other_mRNA_list)
-    if negative_from_other_disease is not None:
-        data, labels, posi_size = get_multiple_data_based_mRNAs(mRNA_list, disease_mRNA_data, mRNAlabels, ensg_ensp_map, 
-                        ratio=ratio*posi_nega_ratio, other_mRNA_list = other_mRNA_list, negative_sampe_set = negative_from_other_disease,
-                        gene_position_dict = gene_position_dict)
-    else:
-        raise 'should select negative from other disease'
-    #posi_data, nega_data, posi_size = get_multiple_data_based_clustering(disease_mRNA_data, mRNAlabels, ratio = ratio)
-    #data = normalize(data, axis=0)
-    fea_len = len(data[0])
-    
-    data, scaler = preprocess_data(data.transpose())
-    data = data.transpose()
-    disease_lncRNA_data, scaler = preprocess_data(disease_lncRNA_data.transpose())
-    disease_lncRNA_data = disease_lncRNA_data.transpose()
-    
-    data = preprocess_data_tissue(data)
-    disease_lncRNA_data = preprocess_data_tissue(disease_lncRNA_data)
-    
-    get_normalized_values_by_column(data, fea_len)
-    #get_normalized_values_by_column(data, fea_len)
-    normalized_data = get_normalized_given_max_min(disease_lncRNA_data)    
-    #normalized_data = xgb.DMatrix( normalized_data, missing=-999)
-    posi_data = data[:posi_size]
-    nega_data = data[posi_size:]
-    ntress = 10
 
-    #y_ensem_pred = [0] * len(disease_lncRNA_data)
-    y_impotance = np.zeros(fea_len)
-    y_ensem_pred = np.zeros(len(disease_lncRNA_data))
-    nega_size = posi_size * posi_nega_ratio
-    #y_ensem_pred = []
-    for ind in range(ratio): 
-        #train = np.vstack((data[:posi_size], data[(ind + 1)*posi_size:(ind+2)*posi_size]))
-        #pdb.set_trace() 
-        train = np.vstack((posi_data, nega_data[ind*nega_size:(ind + 1)*nega_size])) 
-        #print train.shape
-        train_label = [1] *posi_size + [0] * nega_size
-        
-        if SVM:
-            parameters = {'kernel': ['linear', 'rbf'], 'C': [1, 2, 3, 4, 5, 6, 10], 'gamma': [0.5,1,2,4, 6, 8]}
-            svr = svm.SVC(probability = True)
-            clf = grid_search.GridSearchCV(svr, parameters, cv=3)
-        else:
-            clf = RandomForestClassifier(n_estimators=ntress)
-        #loo = cross_validation.LeaveOneOut(len(train_label))
-        #this_scores = cross_validation.cross_val_score(clf, train, np.array(train_label), cv = loo)
-        #weight = np.mean(this_scores)
-        
-        clf.fit(train, train_label)
-        y_impotance = y_impotance + clf.feature_importances_
-        #if roc_plot:
-        #    y_pred = clf.predict_proba(disease_lncRNA_data)[:, 1]    
-        #else:
-        y_pred = clf.predict_proba(normalized_data)[:, 1]
-        #pdb.set_trace()
-        y_ensem_pred = y_ensem_pred + y_pred/ratio
-        #y_ensem_pred = [x + y/ratio for x,y in zip(y_ensem_pred, y_pred)]
-        #y_ensem_pred.append(y_pred)
-
-    if overlap_disease_mRNA_list is not None:
-        overlap_lncRNA = check_lncRNA_mRNA_position(overlap_disease_mRNA_list, lncRNA_list, gene_position_dict, DIS_GAP = 500000, strand_speific = True)
-        print len(overlap_lncRNA)
-        y_ensem_pred_new  = []
-        for score, lncRNA in zip(y_ensem_pred, lncRNA_list):
-            if lncRNA in overlap_lncRNA:
-                #y_ensem_pred_new.append(min(1.0, score*1.4))
-                y_ensem_pred_new.append( score*1.5)
-            else:
-                y_ensem_pred_new.append(score*0.6)  
-        y_ensem_pred =  y_ensem_pred_new      
-                
-    #snp_exist_in_lncRNA_list = exist_snp_in_lncRNA(gene_position_dict, lncRNA_list, gwas = True, down_up_stream = False)
-    
-    y_impotance = y_impotance/ratio  
-      
-    fw.write('\t'.join(map(str, y_ensem_pred)))
-    fw.write('\n')
-    if f_imp is not None:
-        f_imp.write('\t'.join(map(str, y_impotance)))
-        f_imp.write('\n')
-'''
 def rf_parameter_select(X,y):
     param_grid = {"min_samples_leaf": [1, 2, 3],
                 'max_features': ['auto', 'sqrt', 'log2'],
@@ -867,11 +778,7 @@ def cross_validataion_lncRNA_using_mRNA(disease_mRNA_data, mRNAlabels, disease_l
         y_ensem_pred_new  = []
         for score, lncRNA in zip(y_ensem_pred, lncRNA_list):
             if lncRNA in overlap_lncRNA:
-                #y_ensem_pred_new.append(min(1.0, score*1.6))
                 new_score = score*SCALEUP
-                #if new_score > 1:
-                #    y_ensem_pred_new.append( 1 + (new_score -1)*0.5)
-                #else:
                 y_ensem_pred_new.append(new_score)
             else:
                 y_ensem_pred_new.append(score*SCALEDOWN)  
@@ -1593,131 +1500,10 @@ def read_DISEASE_database(include_textming = False, confidence=2):
                  
     return disease_gene_dict, disease_name_map, whole_disease_gene_dict
 
-def read_DISEASE_database_old(include_textming = False, confidence=2, include_DisGeNET_curated = True):
-    #ensp_to_ensg_map = get_ENSP_ENSG_map()
-    disease_gene_dict = {}
-    whole_disease_gene_dict = {}
-    disease_name_map = {}
-    database_files = ['data/disease/human_disease_experiments_full.tsv', 'data/disease/human_disease_knowledge_full.tsv']
-    if include_textming:
-        database_files = database_files + ['data/disease/human_disease_textmining_full.tsv']
-        
-    for datafile in database_files:
-        fp = open(datafile, 'r')
-        for line in fp:
-            if 'DOID:' not in line or 'ENSP' not in line:
-                continue
-            values = line.rstrip('\r\n').split('\t')
-            gene = values[0]
-            disease = values[2]
-            disease_name = values[3]
-            disease_name_map[disease] = disease_name.upper()
-            whole_disease_gene_dict.setdefault(disease, set()).add(gene)
-            if 'textmining' in datafile:
-                conf = float(values[-2])
-                if conf < 2.5:
-                    continue                
-            else:
-                conf = float(values[-1])
-                if conf < confidence:
-                    continue
-            #if ensp_to_ensg_map.has_key(gene):
-            disease_gene_dict.setdefault(disease, set()).add(gene)
-            #else:
-            #    print gene
-        
-        fp.close()
-    if not include_textming:
-        fp = open('data/disease/human_disease_textmining_full.tsv', 'r')
-        for line in fp:
-            if 'DOID:' not in line or 'ENSP' not in line:
-                continue
-            values = line.rstrip('\r\n').split('\t')
-            gene = values[0]
-            disease = values[2]
-            disease_name = values[3]
-            disease_name_map[disease] = disease_name.upper()
-            whole_disease_gene_dict.setdefault(disease, set()).add(gene)
-        fp.close()
-                 
-    if include_DisGeNET_curated:
-        print 'integrating DisGeNET'
-        with open('data/disease/DisGeNET_new.txt') as fp:
-            for line in fp:
-                values = line.rstrip().split('\t')
-                gene = values[0]
-                disease = values[1]
-                disease_name = values[2]
-                disease_name_map[disease] = disease_name
-                score = float(values[-1])
-                whole_disease_gene_dict.setdefault(disease, set()).add(gene)
-                if score < DisGeNET_cutoff:
-                    continue
-                disease_gene_dict.setdefault(disease, set()).add(gene)
-                       
+
 
     return disease_gene_dict, disease_name_map, whole_disease_gene_dict
-   
-def read_DISEASE_database_older(include_textming = True, confidence=2, include_DisGeNET_curated = True, more_evidence = False):
-    #ensp_to_ensg_map = get_ENSP_ENSG_map()
-    disease_gene_dict = {}
-    whole_disease_gene_dict = {}
-    disease_name_map = {}
-    database_files = ['data/disease/human_disease_experiments_filtered.tsv', 'data/disease/human_disease_knowledge_filtered.tsv']
-    if include_textming:
-        database_files = database_files + ['data/disease/human_disease_textmining_filtered.tsv']
-        
-    for datafile in database_files:
-        fp = open(datafile, 'r')
-        for line in fp:
-            values = line.rstrip('\r\n').split('\t')
-            gene = values[0]
-            disease = values[2]
-            disease_name = values[3]
-            disease_name_map[disease] = disease_name.upper()
-            conf = float(values[-1])
-            whole_disease_gene_dict.setdefault(disease, set()).add(gene)
-            if conf < confidence:
-                continue
-            #if ensp_to_ensg_map.has_key(gene):
-            disease_gene_dict.setdefault(disease, set()).add(gene)
-            #else:
-            #    print gene
-        
-        fp.close()
-    
-    if include_DisGeNET_curated:
-        print 'integrating DisGeNET'
-        with open('data/disease/DisGeNET_new.txt') as fp:
-            for line in fp:
-                values = line.rstrip().split('\t')
-                gene = values[0]
-                disease = values[1]
-                disease_name = values[2]
-                disease_name_map[disease] = disease_name
-                score = float(values[-1])
-                whole_disease_gene_dict.setdefault(disease, set()).add(gene)
-                if score < DisGeNET_cutoff:
-                    continue
-                disease_gene_dict.setdefault(disease, set()).add(gene)
-                
-    if more_evidence:
-        get_more_evidence_DisGeNET(whole_disease_gene_dict)         
 
-       
-    '''gene_counts = {}
-    for dis_key in disease_gene_dict.keys():
-        genes = disease_gene_dict[dis_key]
-        gene_counts[dis_key] = len(genes)
-    
-    fig = plt.figure()  
-    
-    plt.bar(range(len(gene_counts)),gene_counts.values()) 
-    plt.xlabel('Disease index')
-    plt.ylabel('# of genes')
-    plt.savefig('figure/dis_distribution.jpg')
-    '''
-    return disease_gene_dict, disease_name_map, whole_disease_gene_dict
 
 def get_mRNA_lncRNA_expression_RNAseq_data(whole_data, disease_gene_list=[], ensg_ensp_map={}, gene_type_dict={}, mRNA = True, tissue=False):
     labels = []
@@ -2383,12 +2169,6 @@ def get_mRNA_expression():
     plot_distance_fig(genecode_mRNA_expression, 'E-MTAB-513')
     plot_distance_fig(gse43520_mRNA_expression, 'GSE43520')
     plot_distance_fig(gse30352_mRNA_expression, 'GSE30352')
-    '''
-    print 'print mRNA and lncRNA hist'
-    calculate_mRNA_lncRNA_pcc(genecode_mRNA_expression, genecode_lincRNA_expression, 'E-MTAB-513')
-    calculate_mRNA_lncRNA_pcc(gse43520_mRNA_expression, gse43520_lincRNA_expression, 'GSE43520')
-    calculate_mRNA_lncRNA_pcc(gse30352_mRNA_expression, gse30352_lincRNA_expression, 'GSE30352')    
-    '''
     
     
 def get_genes_overlap():
@@ -2419,22 +2199,6 @@ def get_genes_overlap():
 
 def get_overlap_set(gencode, gse43520, gse30352, gtex):
     data = {}
-    '''
-    data[('E-MTAB-513', 'GSE43520')] = len(gencode & gse43520)
-    data[('E-MTAB-513', 'GSE30352')] = len(gencode & gse30352)
-    data[('E-MTAB-513', 'GTEx')] = len(gencode & gtex)
-    data[('GSE43520', 'GSE30352')] = len(gse30352 & gse43520)
-    data[('GSE43520', 'GTEx')] = len(gtex & gse43520)
-    data[('GSE30352', 'GTEx')] = len(gtex & gse30352)
-    data[('E-MTAB-513', 'GSE43520', 'GSE30352')] = len(gencode & gse43520 & gse30352)
-    data[('E-MTAB-513', 'GSE43520', 'GTEx')] = len(gencode & gse43520 & gtex)
-    data[('GSE43520', 'GSE30352', 'GTEx')] = len(gse30352 & gse43520 & gtex)
-    data[('E-MTAB-513', 'GSE43520', 'GSE30352', 'GTEx')]= len(gencode & gse30352 & gse43520 & gtex)
-    data[('E-MTAB-513',)] = len(gencode - gse30352 - gse43520 - gtex)
-    data[('GSE43520',)] = len(gse43520 - gse30352 - gencode - gtex)
-    data[('GSE30352',)] = len(gse30352 - gencode - gse43520 - gtex)
-    data[('GTEx',)] = len(gtex - gse30352 - gse43520 - gencode)
-    '''
     data[('D1', 'D2')] = len(gencode & gse43520)
     data[('D1', 'D3')] = len(gencode & gse30352)
     data[('D1', 'D4')] = len(gencode & gtex)
@@ -2496,17 +2260,7 @@ def plot_venn_figure():
     #for text in v1.set_labels:
     #    text.set_fontsize(20)
     v2 = venn.venn([genecode_lincRNA, gse43520_lincRNA, gse30352_lincRNA, gtex_lincRNA], set_labels, title_name = 'lncRNA', figsize=(7,7))
-    #v2.get_patch_by_id('100').set_color('blue')
-    #v2.get_patch_by_id('010').set_color('green')
-    #v2.get_patch_by_id('001').set_color('gray')
-    #v2.get_patch_by_id('001').set_color('red')
-    #for text in v2.set_labels:
-    #    text.set_fontsize(20)
-    
-    #plt.title("lncRNA", fontsize=20)
-    
-    #plt.tight_layout()
-    #plt.show() 
+
 
 def plot_figure(data, tissue_names, gene, dataname):
     width = 0.5
@@ -2781,22 +2535,9 @@ def read_master_files(master_file):
             
             disease_lncRNA_dict[key] = float(score_vals[index])
     fp.close()
-    '''for line in open(master_file):
-        values = line.rstrip('\r\n').split('\t')
-        gene = values[1]
-        disease = values[2]
-        score = float(values[5])
-        disease_lncRNA_dict[(disease, gene)] = score
-        master_disease_set.add(disease)
-        master_lncRNA_set.add(gene)
-    '''    
+ 
     return disease_lncRNA_dict, master_disease_set, master_lncRNA_set
 
-'''def plot_lncRNA_plot(lncRNAdisease_list, disease_set, ):
-    for key in lncRNAdisease_list:
-    if key[0] not in shared_disease:
-        continue
-'''
 
 def select_association_for_roc(lncRNAdisease_list, shared_disease, master_lncRNA_set, dis_lncRNA):
     roc_label_list = []
@@ -2848,318 +2589,7 @@ def read_disease_files(file_name):
         disease = values[2]
         disease_genes.setdefault(disease, set([])).add(gene)
     return disease_genes
-
-def performance_accuracy_for_random(expanison = False):
-    #lncRNAdisease_set, DISEASE_set, disease_gene_dict = get_disease_in_database()
-    #shared_disease = lncRNAdisease_set & DISEASE_set
-    datasource =['E-MTAB-513', 'GSE43520', 'GSE30352', 'GTEx']
-    #resultfiles = ['result/E-MTAB-513_lncRNA_knn.tsv', 'result/GSE43520_lncRNA_knn.tsv', 'result/GSE30352_lncRNA_knn.tsv', 'result/GTEx_lncRNA_knn.tsv']
-    #resultfiles = ['result/E-MTAB-513_lncRNA_coexp_3nn.tsv', 'result/GSE43520_lncRNA_coexp_3nn.tsv', 'result/GSE30352_lncRNA_coexp_3nn.tsv', 
-    #               'result/GTEx_lncRNA_coexp_3nn.tsv']
-    resultfiles = ['result/E-MTAB-513_lncRNA.tsv', 'result/GSE43520_lncRNA.tsv', 'result/GSE30352_lncRNA.tsv', 'result/GTEx_lncRNA.tsv']
-    disease_set = set()
-    lncRNAdisease_list = set([])
-    disease_genes = read_disease_files('data/disease/data_disease_doid.txt')
-    oboparser = obo_object()
-    oboparser.read_obo_file()
-    #for line in open('data/disease/data_disease_new.txt'):
-    for line in open('data/disease/data_disease_doid.txt', 'r'):
-        values = line.rstrip('\r\n').split('\t')
-        gene = values[1]
-        disease = values[2].upper()
-        #lncRNAdisease_dict.setdefault(c, set()).add(gene)
-        lncRNAdisease_list.add((disease, gene))
-        disease_set.add(disease)
-        # exapnd association from its child disease
-        if expanison:
-            if 'DOID' in disease:
-                child_disease = oboparser.getDescendents(disease)
-                for dis in child_disease:
-                    if disease_genes.has_key(dis):
-                        genes = disease_genes[dis]
-                        for id1_exp in genes:
-                            lncRNAdisease_list.add((disease, id1_exp))
-                            
-                parent_disease = oboparser.getDescendents(disease)
-                own_genes = disease_genes[disease]
-                for dis in parent_disease:
-                    for id1_exp in own_genes:
-                        lncRNAdisease_list.add((dis, id1_exp))
-    
-    gencode_dis_lncRNA, gencode_master_disease_set, gencode_master_lncRNA_set = read_master_files(resultfiles[0])
-    GSE43520_dis_lncRNA, GSE43520_master_disease_set, GSE43520_master_lncRNA_set = read_master_files(resultfiles[1])        
-    GSE30352_dis_lncRNA, GSE30352_master_disease_set, GSE30352_master_lncRNA_set = read_master_files(resultfiles[2])    
-    GTEx_dis_lncRNA, GTEx_master_disease_set, GTEx_master_lncRNA_set = read_master_files(resultfiles[3]) 
-    
-    gencode_shared_disease =  gencode_master_disease_set & disease_set   
-    GSE43520_shared_disease =  GSE43520_master_disease_set & disease_set  
-    GSE30352_shared_disease =  GSE30352_master_disease_set & disease_set
-    GTEx_shared_disease =  GTEx_master_disease_set & disease_set
-    #pdb.set_trace()
-
-    
-    genecode_label_roc_list, genecode_score_roc_list = select_association_for_roc(lncRNAdisease_list, gencode_shared_disease, gencode_master_lncRNA_set, gencode_dis_lncRNA)
-    GSE43520_label_roc_list, GSE43520_score_roc_list = select_association_for_roc(lncRNAdisease_list, GSE43520_shared_disease, GSE43520_master_lncRNA_set, GSE43520_dis_lncRNA)
-    GSE30352_label_roc_list, GSE30352_score_roc_list = select_association_for_roc(lncRNAdisease_list, GSE30352_shared_disease, GSE30352_master_lncRNA_set, GSE30352_dis_lncRNA)
-    GTEx_label_roc_list, GTEx_score_roc_list = select_association_for_roc(lncRNAdisease_list, GTEx_shared_disease, GTEx_master_lncRNA_set, GTEx_dis_lncRNA)
-    #pdb.set_trace()
-    plt.close("all")
-    Figure = plt.figure() 
-    #pdb.set_trace()
-    plot_roc_curve_lncRNA(genecode_label_roc_list, genecode_score_roc_list, datasource[0])
-    plot_roc_curve_lncRNA(GSE43520_label_roc_list, GSE43520_score_roc_list, datasource[1])
-    plot_roc_curve_lncRNA(GSE30352_label_roc_list, GSE30352_score_roc_list, datasource[2])
-    plot_roc_curve_lncRNA(GTEx_label_roc_list, GTEx_score_roc_list, datasource[3])
-    plt.plot([0, 1], [0, 1], 'k--')
-    plt.xlim([0, 1])
-    plt.ylim([0, 1])
-    plt.xlabel('False Positive Rate')
-    plt.ylabel('True Positive Rate')
-    plt.title('ROC')
-    plt.legend(loc="lower right")
-    #plt.savefig(save_fig_dir + selected + '_' + class_type + '.png') 
-    plt.show()    
-
-def performance_accuracy_for_random_multi(expanison = False):
-    #lncRNAdisease_set, DISEASE_set, disease_gene_dict = get_disease_in_database()
-    #shared_disease = lncRNAdisease_set & DISEASE_set
-    datasource =['E-MTAB-513', 'GSE43520', 'GSE30352', 'GTEx']
-    #resultfiles = ['result/E-MTAB-513_lncRNA_knn.tsv', 'result/GSE43520_lncRNA_knn.tsv', 'result/GSE30352_lncRNA_knn.tsv', 'result/GTEx_lncRNA_knn.tsv']
-    resultfiles = ['result/E-MTAB-513_lncRNA_coexp_1nn.tsv', 'result/GSE43520_lncRNA_coexp_1nn.tsv', 'result/GSE30352_lncRNA_coexp_1nn.tsv', 
-                   'result/GTEx_lncRNA_coexp_1nn.tsv']
-    #resultfiles = ['result/E-MTAB-513_lncRNA.tsv', 'result/GSE43520_lncRNA.tsv', 'result/GSE30352_lncRNA.tsv', 'result/GTEx_lncRNA.tsv']
-    disease_set = set()
-    lncRNAdisease_list = set([])
-    disease_genes = read_disease_files('data/disease/data_disease_doid.txt')
-    oboparser = obo_object()
-    oboparser.read_obo_file()
-    #for line in open('data/disease/data_disease_new.txt'):
-    for line in open('data/disease/data_disease_doid.txt', 'r'):
-        values = line.rstrip('\r\n').split('\t')
-        gene = values[1]
-        disease = values[2].upper()
-        #lncRNAdisease_dict.setdefault(c, set()).add(gene)
-        lncRNAdisease_list.add((disease, gene))
-        disease_set.add(disease)
-        # exapnd association from its child disease
-        if expanison:
-            if 'DOID' in disease:
-                child_disease = oboparser.getDescendents(disease)
-                for dis in child_disease:
-                    if disease_genes.has_key(dis):
-                        genes = disease_genes[dis]
-                        for id1_exp in genes:
-                            lncRNAdisease_list.add((disease, id1_exp))
-                            
-                parent_disease = oboparser.getAncestors(disease)
-                #pdb.set_trace()
-                own_genes = disease_genes[disease]
-                for dis in parent_disease:
-                    for id1_exp in own_genes:
-                        lncRNAdisease_list.add((dis, id1_exp))
-    
-    gencode_dis_lncRNA, gencode_master_disease_set, gencode_master_lncRNA_set = read_master_files(resultfiles[0])
-    GSE43520_dis_lncRNA, GSE43520_master_disease_set, GSE43520_master_lncRNA_set = read_master_files(resultfiles[1])        
-    GSE30352_dis_lncRNA, GSE30352_master_disease_set, GSE30352_master_lncRNA_set = read_master_files(resultfiles[2])    
-    GTEx_dis_lncRNA, GTEx_master_disease_set, GTEx_master_lncRNA_set = read_master_files(resultfiles[3]) 
-    
-    gencode_shared_disease =  gencode_master_disease_set & disease_set   
-    GSE43520_shared_disease =  GSE43520_master_disease_set & disease_set  
-    GSE30352_shared_disease =  GSE30352_master_disease_set & disease_set
-    GTEx_shared_disease =  GTEx_master_disease_set & disease_set
-    #pdb.set_trace()
-    genecode_label_roc_list, genecode_score_roc_list =[],[]
-    GSE43520_label_roc_list, GSE43520_score_roc_list =[], []
-    GSE30352_label_roc_list, GSE30352_score_roc_list = [], []
-    GTEx_label_roc_list, GTEx_score_roc_list = [], []
-    for time in range(10):
-        genecode_label_roc_list1, genecode_score_roc_list1 = select_association_for_roc(lncRNAdisease_list, gencode_shared_disease, gencode_master_lncRNA_set, gencode_dis_lncRNA)
-        print 'gencode', len(genecode_label_roc_list1)
-        genecode_label_roc_list = genecode_label_roc_list + genecode_label_roc_list1
-        genecode_score_roc_list = genecode_score_roc_list + genecode_score_roc_list1
-        GSE43520_label_roc_list1, GSE43520_score_roc_list1 = select_association_for_roc(lncRNAdisease_list, GSE43520_shared_disease, GSE43520_master_lncRNA_set, GSE43520_dis_lncRNA)
-        print 'GSE43520', len(GSE43520_label_roc_list1)
-        GSE43520_label_roc_list = GSE43520_label_roc_list + GSE43520_label_roc_list1
-        GSE43520_score_roc_list = GSE43520_score_roc_list + GSE43520_score_roc_list1        
-        GSE30352_label_roc_list1, GSE30352_score_roc_list1 = select_association_for_roc(lncRNAdisease_list, GSE30352_shared_disease, GSE30352_master_lncRNA_set, GSE30352_dis_lncRNA)
-        print 'GSE30352', len(GSE30352_label_roc_list1)
-        GSE30352_label_roc_list = GSE30352_label_roc_list + GSE30352_label_roc_list1
-        GSE30352_score_roc_list = GSE30352_score_roc_list + GSE30352_score_roc_list1         
-        GTEx_label_roc_list1, GTEx_score_roc_list1 = select_association_for_roc(lncRNAdisease_list, GTEx_shared_disease, GTEx_master_lncRNA_set, GTEx_dis_lncRNA)
-        print 'GTEx', len(GTEx_label_roc_list1)
-        GTEx_label_roc_list = GTEx_label_roc_list + GTEx_label_roc_list1
-        GTEx_score_roc_list = GTEx_score_roc_list + GTEx_score_roc_list1 
-    #pdb.set_trace()
-    plt.close("all")
-    Figure = plt.figure() 
-    #pdb.set_trace()
-    plot_roc_curve_lncRNA(genecode_label_roc_list, genecode_score_roc_list, datasource[0])
-    plot_roc_curve_lncRNA(GSE43520_label_roc_list, GSE43520_score_roc_list, datasource[1])
-    plot_roc_curve_lncRNA(GSE30352_label_roc_list, GSE30352_score_roc_list, datasource[2])
-    plot_roc_curve_lncRNA(GTEx_label_roc_list, GTEx_score_roc_list, datasource[3])
-    plt.plot([0, 1], [0, 1], 'k--')
-    plt.xlim([0, 1])
-    plt.ylim([0, 1])
-    plt.xlabel('False Positive Rate')
-    plt.ylabel('True Positive Rate')
-    plt.title('CNC')
-    plt.legend(loc="lower right")
-    #plt.savefig(save_fig_dir + selected + '_' + class_type + '.png') 
-    plt.show()  
-
-def performance_accuracy_for_random_multi_cancer_noncancer(expanison = False):
-    #lncRNAdisease_set, DISEASE_set, disease_gene_dict = get_disease_in_database()
-    #shared_disease = lncRNAdisease_set & DISEASE_set
-    datasource =['E-MTAB-513', 'GSE43520', 'GSE30352', 'GTEx']
-    #resultfiles = ['result/E-MTAB-513_lncRNA_knn.tsv', 'result/GSE43520_lncRNA_knn.tsv', 'result/GSE30352_lncRNA_knn.tsv', 'result/GTEx_lncRNA_knn.tsv']
-    #resultfiles = ['result/E-MTAB-513_lncRNA_coexp_5nn.tsv', 'result/GSE43520_lncRNA_coexp_5nn.tsv', 'result/GSE30352_lncRNA_coexp_5nn.tsv', 
-    #               'result/GTEx_lncRNA_coexp_5nn.tsv']
-    resultfiles = ['result/E-MTAB-513_lncRNA.tsv', 'result/GSE43520_lncRNA.tsv', 'result/GSE30352_lncRNA.tsv', 'result/GTEx_lncRNA.tsv']
-    disease_set = set()
-    lncRNAdisease_list = set([])
-    disease_genes = read_disease_files('data/disease/data_disease_doid.txt')
-    oboparser = obo_object()
-    oboparser.read_obo_file()
-    cancer_dis = set()
-    noncancer_dis = set()
-    all_disease = set()
-    #for line in open('data/disease/data_disease_new.txt'):
-    for line in open('data/disease/data_disease_doid.txt', 'r'):
-        values = line.rstrip('\r\n').split('\t')
-        gene = values[1]
-        disease = values[2].upper()
-        #lncRNAdisease_dict.setdefault(c, set()).add(gene)
-        lncRNAdisease_list.add((disease, gene))
-        disease_set.add(disease)
-        all_disease.add(disease)
-        # exapnd association from its child disease
-        if expanison:
-            if 'DOID' in disease:
-                child_disease = oboparser.getDescendents(disease)
-                for dis in child_disease:
-                    if disease_genes.has_key(dis):
-                        genes = disease_genes[dis]
-                        for id1_exp in genes:
-                            lncRNAdisease_list.add((disease, id1_exp))
-                            
-                parent_disease = oboparser.getAncestors(disease)
-                #pdb.set_trace()
-                own_genes = disease_genes[disease]
-                for dis in parent_disease:
-                    all_disease.add(dis)
-                    for id1_exp in own_genes:
-                        lncRNAdisease_list.add((dis, id1_exp))
-    
-    gencode_dis_lncRNA, gencode_master_disease_set, gencode_master_lncRNA_set = read_master_files(resultfiles[0])
-    GSE43520_dis_lncRNA, GSE43520_master_disease_set, GSE43520_master_lncRNA_set = read_master_files(resultfiles[1])        
-    GSE30352_dis_lncRNA, GSE30352_master_disease_set, GSE30352_master_lncRNA_set = read_master_files(resultfiles[2])    
-    GTEx_dis_lncRNA, GTEx_master_disease_set, GTEx_master_lncRNA_set = read_master_files(resultfiles[3]) 
-    
-    for dis_tmp in gencode_master_disease_set:    
-        parent_disease = oboparser.getAncestor_all(dis_tmp)
-        if 'DOID:162' in parent_disease:
-            cancer_dis.add(dis_tmp)
-        else:
-            noncancer_dis.add(dis_tmp)           
-            
-    print len(cancer_dis), len(noncancer_dis)
-    
-    gencode_shared_disease =  gencode_master_disease_set & noncancer_dis   
-    GSE43520_shared_disease =  gencode_master_disease_set & noncancer_dis  
-    GSE30352_shared_disease =  gencode_master_disease_set & noncancer_dis
-    GTEx_shared_disease =  gencode_master_disease_set & noncancer_dis
-
-    print len(gencode_shared_disease),len(GTEx_shared_disease)
-    #pdb.set_trace()
-    genecode_label_roc_list, genecode_score_roc_list =[],[]
-    GSE43520_label_roc_list, GSE43520_score_roc_list =[], []
-    GSE30352_label_roc_list, GSE30352_score_roc_list = [], []
-    GTEx_label_roc_list, GTEx_score_roc_list = [], []
-    for time in range(10):
-        genecode_label_roc_list1, genecode_score_roc_list1 = select_association_for_roc(lncRNAdisease_list, gencode_shared_disease, gencode_master_lncRNA_set, gencode_dis_lncRNA)
-        print 'gencode', len(genecode_label_roc_list1)
-        genecode_label_roc_list = genecode_label_roc_list + genecode_label_roc_list1
-        genecode_score_roc_list = genecode_score_roc_list + genecode_score_roc_list1
-        GSE43520_label_roc_list1, GSE43520_score_roc_list1 = select_association_for_roc(lncRNAdisease_list, GSE43520_shared_disease, GSE43520_master_lncRNA_set, GSE43520_dis_lncRNA)
-        print 'GSE43520', len(GSE43520_label_roc_list1)
-        GSE43520_label_roc_list = GSE43520_label_roc_list + GSE43520_label_roc_list1
-        GSE43520_score_roc_list = GSE43520_score_roc_list + GSE43520_score_roc_list1        
-        GSE30352_label_roc_list1, GSE30352_score_roc_list1 = select_association_for_roc(lncRNAdisease_list, GSE30352_shared_disease, GSE30352_master_lncRNA_set, GSE30352_dis_lncRNA)
-        print 'GSE30352', len(GSE30352_label_roc_list1)
-        GSE30352_label_roc_list = GSE30352_label_roc_list + GSE30352_label_roc_list1
-        GSE30352_score_roc_list = GSE30352_score_roc_list + GSE30352_score_roc_list1         
-        GTEx_label_roc_list1, GTEx_score_roc_list1 = select_association_for_roc(lncRNAdisease_list, GTEx_shared_disease, GTEx_master_lncRNA_set, GTEx_dis_lncRNA)
-        print 'GTEx', len(GTEx_label_roc_list1)
-        GTEx_label_roc_list = GTEx_label_roc_list + GTEx_label_roc_list1
-        GTEx_score_roc_list = GTEx_score_roc_list + GTEx_score_roc_list1 
-    #pdb.set_trace()
-    plt.close("all")
-    Figure = plt.figure() 
-    #pdb.set_trace()
-    plot_roc_curve_lncRNA(genecode_label_roc_list, genecode_score_roc_list, datasource[0])
-    plot_roc_curve_lncRNA(GSE43520_label_roc_list, GSE43520_score_roc_list, datasource[1])
-    plot_roc_curve_lncRNA(GSE30352_label_roc_list, GSE30352_score_roc_list, datasource[2])
-    plot_roc_curve_lncRNA(GTEx_label_roc_list, GTEx_score_roc_list, datasource[3])
-    plt.plot([0, 1], [0, 1], 'k--')
-    plt.xlim([0, 1])
-    plt.ylim([0, 1])
-    plt.xlabel('False Positive Rate')
-    plt.ylabel('True Positive Rate')
-    #plt.title('DislncRF')
-    plt.title('Non-cancer diseases')
-    #plt.title('CNC (K=5)')
-    plt.legend(loc="lower right")
-    #plt.savefig(save_fig_dir + selected + '_' + class_type + '.png') 
-    plt.show()
-
-
-def performance_accuracy_for_random_old():
-    #lncRNAdisease_set, DISEASE_set, disease_gene_dict = get_disease_in_database()
-    #shared_disease = lncRNAdisease_set & DISEASE_set
-    datasource =['E-MTAB-513', 'GSE43520', 'GSE30352', 'GTEx']
-    #resultfiles = ['result/E-MTAB-513_lncRNA_knn.tsv', 'result/GSE43520_lncRNA_knn.tsv', 'result/GSE30352_lncRNA_knn.tsv', 'result/GTEx_lncRNA_knn.tsv']
-    #resultfiles = ['result/E-MTAB-513_lncRNA_coexp_3nn.tsv', 'result/GSE43520_lncRNA_coexp_3nn.tsv', 'result/GSE30352_lncRNA_coexp_3nn.tsv', 
-    #               'result/GTEx_lncRNA_coexp_3nn.tsv']
-    resultfiles = ['result/E-MTAB-513_lncRNA.tsv', 'result/GSE43520_lncRNA.tsv', 'result/GSE30352_lncRNA.tsv', 'result/GTEx_lncRNA.tsv']
-    disease_set = set()
-    lncRNAdisease_list = []
-    #for line in open('data/disease/data_disease_new.txt'):
-    for line in open('data/disease/data_disease_doid.txt', 'r'):
-        values = line.rstrip('\r\n').split('\t')
-        gene = values[1]
-        disease = values[2].upper()
-        #lncRNAdisease_dict.setdefault(c, set()).add(gene)
-        lncRNAdisease_list.append((disease, gene))
-        disease_set.add(disease)
-    
-    gencode_dis_lncRNA, gencode_master_disease_set, gencode_master_lncRNA_set = read_master_files(resultfiles[0])
-    GSE43520_dis_lncRNA, GSE43520_master_disease_set, GSE43520_master_lncRNA_set = read_master_files(resultfiles[1])        
-    GSE30352_dis_lncRNA, GSE30352_master_disease_set, GSE30352_master_lncRNA_set = read_master_files(resultfiles[2])    
-    
-    gencode_shared_disease =  gencode_master_disease_set & disease_set   
-    GSE43520_shared_disease =  GSE43520_master_disease_set & disease_set  
-    GSE30352_shared_disease =  GSE30352_master_disease_set & disease_set
-    
-    genecode_label_roc_list, genecode_score_roc_list = select_association_for_roc(lncRNAdisease_list, gencode_shared_disease, gencode_master_lncRNA_set, gencode_dis_lncRNA)
-    GSE43520_label_roc_list, GSE43520_score_roc_list = select_association_for_roc(lncRNAdisease_list, GSE43520_shared_disease, GSE43520_master_lncRNA_set, GSE43520_dis_lncRNA)
-    GSE30352_label_roc_list, GSE30352_score_roc_list = select_association_for_roc(lncRNAdisease_list, GSE30352_shared_disease, GSE30352_master_lncRNA_set, GSE30352_dis_lncRNA)
-    #pdb.set_trace()
-    plt.clf()
-    plt.cla()
-    Figure = plt.figure() 
-    #pdb.set_trace()
-    plot_roc_curve_lncRNA(genecode_label_roc_list, genecode_score_roc_list, datasource[0])
-    plot_roc_curve_lncRNA(GSE43520_label_roc_list, GSE43520_score_roc_list, datasource[1])
-    plot_roc_curve_lncRNA(GSE30352_label_roc_list, GSE30352_score_roc_list, datasource[2])
-    plt.plot([0, 1], [0, 1], 'k--')
-    plt.xlim([0, 1])
-    plt.ylim([0, 1])
-    plt.xlabel('False Positive Rate')
-    plt.ylabel('True Positive Rate')
-    plt.title('ROC')
-    plt.legend(loc="lower right")
-    #plt.savefig(save_fig_dir + selected + '_' + class_type + '.png') 
-    plt.show()    
+   
     
 def plot_roc_curve_lncRNA(labels, probality, legend_text):
     #fpr2, tpr2, thresholds = roc_curve(labels, pred_y)
@@ -3422,49 +2852,6 @@ def merge_two_lncRNA_disease():
     
     fw.close()
     
-def read_DisGeNET_database():
-    doid_bto_map = read_DOID_BTO_map()
-    ensg_ensp = get_ENSP_ENSG_map()
-    gene_type_dict, gene_name_ensg, gene_id_position = read_gencode_gene_type()
-    disease_gene = {}
-    fw  = open('data/disease/DisGeNET_new.txt', 'w')
-    head = True
-    with gzip.open('data/disease/curated_gene_disease_associations.txt.gz', 'r') as fp:
-        for line in fp:
-            if head:
-                head = False
-                continue
-            values = line.rstrip('\r\n').split('\t')
-            gene = values[3]
-            if not gene_name_ensg.has_key(gene):
-                continue
-                
-            disease = values[5].upper()
-
-            '''if not doid_bto_map.has_key(disease):
-                if ',' in disease:
-                    dis_tmp = disease.split(',')
-                    for dis in dis_tmp:
-                        if doid_bto_map.has_key(dis):
-                            disease = dis
-                            break
-                else:
-                    continue
-            '''
-            if not doid_bto_map.has_key(disease):
-                continue
-            new_gene = gene_name_ensg[gene]
-            if gene_type_dict[new_gene] != 'protein_coding':
-                continue
-            if not ensg_ensp.has_key(new_gene):
-                continue
-            new_gene = ensg_ensp[new_gene]
-            new_disease =  doid_bto_map[disease]        
-            
-            fw.write(new_gene + '\t' + new_disease + '\t' + disease + '\t' + values[2] + '\n')
-            
-    
-    fw.close()
 
 def remove_unreal_lncrna():
     lncRNA_type_dicts = ['3prime_overlapping_ncrna', 'ambiguous_orf', 'antisense', 'antisense_RNA', 'lincRNA', 'ncrna_host', 'non_coding', 
@@ -3929,70 +3316,6 @@ def case_study(predict_file):
         #    print 'not in top 200 associated lncRNA' 
        
     #plot_circ_figs(gene_scores)
-#polar bar
-def plot_circ_figs(scores):
-    print 'plot polar bar'
-    N = 20
-    gene_scores = scores[:N]
-    theta = np.linspace(0.0, 2 * np.pi, N, endpoint=False)
-    colors = 10 * np.random.rand(N)
-    radii = [val[0] for val in gene_scores]
-    labels = [val[1] for val in gene_scores]
-    #pdb.set_trace()
-    width = 2*np.pi / N #* np.random.rand(N)
-    
-    ax = plt.subplot(111, projection='polar')
-    bars = ax.bar(theta, radii, width=width, bottom=0.0)
-    
-    # Use custom colors and opacity
-    for r, bar in zip(colors, bars):
-        bar.set_facecolor(plt.cm.jet(r / 10.))
-        bar.set_alpha(0.5)
-        
-    for label in ax.get_xticklabels() + ax.get_yticklabels():
-        label.set_visible(False)
-        
-    def autolabel(rects):
-        # attach some text labels
-        index = 0
-        for rect, label in zip(rects, labels):
-            height = rect.get_height()
-            if index == 3:
-                tex = ax.text(rect.get_x()+rect.get_width()/2., 1.1*height, label, fontsize=10,
-                        ha='center', va='baseline', rotation=60)
-            elif index == 2:
-                tex = ax.text(rect.get_x()+rect.get_width()/2., 1.1*height, label, fontsize=10,
-                        ha='center', va='baseline', rotation=30) 
-            elif index == 6:
-                tex = ax.text(rect.get_x()+rect.get_width()/2., 1.1*height, label, fontsize=10,
-                        ha='left', va='baseline', rotation=110)  
-            elif index <=2:
-                tex = ax.text(rect.get_x()+rect.get_width()/2., 1.1*height, label, fontsize=10,
-                        ha='center', va='center')                
-            elif index >2 and index <=12:
-                tex = ax.text(rect.get_x()+rect.get_width()/2., 1.1*height, label, fontsize=10,
-                        ha='center', va='top')
-            elif index == 12 or index == 13:
-                tex = ax.text(rect.get_x()+rect.get_width()/2., 1.1*height, label, fontsize=10,
-                        ha='right', va='bottom')
-            elif index == 16 or index == 17:
-                tex = ax.text(rect.get_x()+rect.get_width()/2., 1.1*height, label, fontsize=10,
-                        ha='left', va='bottom')
-            else:
-                tex = ax.text(rect.get_x()+rect.get_width()/2., 1.1*height, label, fontsize=10,
-                        ha='center', va='bottom')
-            if index >3 and index < 6:
-                tex.set_rotation('vertical')
-            if index >13 and index < 16:
-                tex.set_rotation('vertical')
-            
-            index = index + 1
-    #for tick in ax.get_xticklabels():
-    #    tick.set_rotation(45)
-    autolabel(bars)
-    plt.tight_layout()
-    plt.show()    
-
 
 def do_some_stas(input_file, RNAseq = True, data=0, ratio=5, confidence=3, use_mean = False, log2 = False):
     #pdb.set_trace()
@@ -4065,10 +3388,7 @@ if __name__ == '__main__':
     datasource ={0:'E-MTAB-513', 1:'GSE43520', 2:'GSE30352', 3:'GTEx'}
     filenames = {0:'data/gencodev7/genes.fpkm_table', 1:'data/GSE43520/genes.fpkm_table', 
                  2:'data/GSE30352/genes.fpkm_table', 3:'data/gtex/GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_median_rpkm.gct.gz'}
-    #print expression_file, ratio, class_type, body2_map, confidence
-    #express_dict = convert_average_read_to_normalized_RPKM(expression_file)
-    #pdb.set_trace()
-    #expression_file = sys.argv[1]
+
     random.seed(100)
     log2 = True
     expanison = True
@@ -4129,72 +3449,7 @@ if __name__ == '__main__':
             fw.close()                
         elif class_type == "plot":
             print 'expression distribution fig'
-            #do_some_stas(expression_file)
-            #read_cancer_name()
-            #remove_unreal_lncrna()
-            #read_evolutionary_expression_data()
-            #read_average_read_to_normalized_RPKM()
-            #outfile = 'result/' + datasource[data] + '_mRNA.tsv'
-            #print outfile
-            #calculate_average_performance_mRNA_crossvlidation(outfile)
-            #read_lnccancer()
-            #merge_two_lncRNA_disease()
-            #plot_expression_distribution(expression_file, data=data)
-            #print 'plot venn figure'
-            #plot_venn_figure()
-            #plot_bar_overlap_fig()
-            #break
-            #compare_disease_overlap()
-            #gene_type_dict, gene_name_ensg, gene_id_position = read_gencode_gene_type()
-            #data, samples = read_gtex_expression()
-            #pdb.set_trace()
-            #spec_case_study()
-            #read_DisGeNET_database()
-            #print 'plot expression figure'
-            #ENSG00000253364:RP11-731F5.2
-            #plot_gene_express_in_tissue()
-            #plot_tissue_importance('result/E-MTAB-513_lncRNA.tsv.imp')
-            #print 'map lncRNAdisease database'
-            #transfer_name_ensg_for_lncRNAdisease()
-            #read_evolutionary_expression_data(filenames[1])
-            #read_average_read_to_normalized_RPKM(filenames[2])
-            #print 'lncRNA classification performance'
-            #performance_accuracy_for_random(expanison = False)
-            #performance_accuracy_for_random_multi_cancer_noncancer(expanison = True)
-            #performance_accuracy_for_random_multi(expanison = True)
-            #map_to_doid_disease()
-            #outfile = 'result/' + datasource[data] + '_lncRNA.tsv'
-            #plot_IBD_roc()
-            #case_study(outfile)
-            #plot_circ_figs()
-            #compare_disease_overlap()
-            case_study_IBD_venn()
-            #case_study_IBD(outfile)
-            #outfile = 'result/' + datasource[data] + '_lncRNA.tsv'
-            #calculate_cc_tissue_imp(outfile + '.imp', dataset = datasource[data])
-            #calculate_cc_tissue_imp(outfile)
-            #plot_tissue_importance(outfile)
-            #test_obo_parser()
-            #print 'plot dis hist'
-            ##get_mRNA_expression()
-            #plot_expression_fig()
 
             break
         
-    #print CUTOFF, TRAIN_NUM, SCALEUP, SCALEDOWN
-    #performance_accuracy_for_random(expanison = False)
-    #elif class_type == "combine": 
-        #
-    #    print 'combining different data sources'
-        #pdb.set_trace()
-    #    stringrnautils.combine_masterfiles(("E-MTAB-513.tsv", "GSE43520.tsv", "GSE30352.tsv", "GTEx.tsv"),
-    #                                   'predictions.tsv', window_size=25, negative_evidence=False, rebenchmark_everything=True)
-    print 'top candidates'
-    #get_overlap_predcited_real()
-    #read_cancer_lncRNA_database()
-    #dis_dict = {}
-    #get_all_snp_disease_assoc()
-    #print 'disease tissue score'
-    #disease_tissue_dct, tissues = get_disease_associated_matrix()
-    "prostate cancer: 176807"
-    #plot_disease_tissue_score('176807', disease_tissue_dct, tissues, "Prostate cancer")        
+       
