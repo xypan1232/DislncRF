@@ -3406,14 +3406,11 @@ if __name__ == '__main__':
             print '#predict disease associated lncRNA using mRNA'
             outfile = 'result/' + datasource[data] + '_lncRNA.tsv'
             predict_for_lncRNA_using_mRNA(expression_file, outfile, data=data, ratio=ratio, confidence=confidence, use_mean = False, log2 = log2)
-            plot_tissue_importance(outfile + '.imp')
             calculate_cc_tissue_imp(outfile + '.imp', dataset = datasource[data])
             print '#benchmarking predicted disease associated lncRNA using lncRNADisease database'
             benfile = 'master_files/' + datasource[data] + '.tsv'
             fw = open(benfile, 'w')
             benchmark_predict_disease_lncRNAs(outfile, fw, datasource[data], expanison = expanison)
-            case_study(outfile)
-            case_study_IBD(outfile)
             fw.close()
         elif class_type == 'coexpress':
             print '#predict disease associated lncRNA using coexpression'
