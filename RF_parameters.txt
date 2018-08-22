@@ -1,0 +1,1423 @@
+﻿# RF: Random Forest
+DERMATITIS
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+BRAIN DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+VIRAL INFECTIOUS DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+PARKINSON'S DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 3}
+PRIMARY IMMUNODEFICIENCY DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+PSORIASIS
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 3}
+BACTERIAL INFECTIOUS DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+NON-HODGKIN LYMPHOMA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 3}
+PARASITIC INFECTIOUS DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RHEUMATIC DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RESPIRATORY SYSTEM DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+ISCHEMIA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+GOUT
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RESPIRATORY SYSTEM CANCER
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+LUNG DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+COLLAGEN DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+SCHIZOPHRENIA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+HEMATOLOGIC CANCER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+OSTEOARTHRITIS
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+HYPERTENSION
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+ASTHMA
+RF 0 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+MUSCULOSKELETAL SYSTEM CANCER
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+ULCERATIVE COLITIS
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+THYROID GLAND DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+BENIGN NEOPLASM
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 2}
+PROSTATE CANCER
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+SUBSTANCE-RELATED DISORDER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+MALE REPRODUCTIVE ORGAN CANCER
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+CELIAC DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+MACULAR DEGENERATION
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+DEMYELINATING DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+LYSOSOMAL STORAGE DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+KIDNEY DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+ACQUIRED IMMUNODEFICIENCY SYNDROME
+RF 0 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+GENETIC DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+GONADAL DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+FEMALE REPRODUCTIVE ORGAN CANCER
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+THORACIC CANCER
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+APLASTIC ANEMIA
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+ACUTE LYMPHOCYTIC LEUKEMIA
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+BRONCHIAL DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+CARCINOMA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+HYPERSENSITIVITY REACTION TYPE I DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+MUSCULAR DYSTROPHY
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+CARDIOMYOPATHY
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+HEPATOBILIARY DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+GASTROINTESTINAL SYSTEM CANCER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+AUTISTIC DISORDER
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+CROHN'S DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+BIPOLAR DISORDER
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+NEPHRITIS
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+CONGENITAL HYPOPLASTIC ANEMIA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+LIVER CIRRHOSIS
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+NUTRITION DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+PRIMARY CILIARY DYSKINESIA
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+CONNECTIVE TISSUE CANCER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+TYPE 1 DIABETES MELLITUS
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+LUNG CARCINOMA
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+NON-SMALL CELL LUNG CARCINOMA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+UPPER RESPIRATORY TRACT DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+PSYCHOTIC DISORDER
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+MYELOMA
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+OSTEOCHONDRODYSPLASIA
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+CATARACT
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+CHRONIC KIDNEY FAILURE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+GLAUCOMA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+OBESITY
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+SUBSTANCE DEPENDENCE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+CARBOHYDRATE METABOLISM DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+LARGE INTESTINE CANCER
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RETINAL DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+DIABETES MELLITUS
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+TYPE 2 DIABETES MELLITUS
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+EPILEPSY SYNDROME
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+INTESTINAL CANCER
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+ATOPIC DERMATITIS
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+ENDOCRINE GLAND CANCER
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+VASCULAR DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+AUTOIMMUNE DISEASE OF GASTROINTESTINAL TRACT
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+DEVELOPMENTAL DISORDER OF MENTAL HEALTH
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+INTRINSIC CARDIOMYOPATHY
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+SPECIFIC DEVELOPMENTAL DISORDER
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+HEMOLYTIC ANEMIA
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+HEPATOCELLULAR CARCINOMA
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+LIVER CARCINOMA
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+TAUOPATHY
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+CILIOPATHY
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+LYMPHOBLASTIC LEUKEMIA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+LUNG CANCER
+RF 0 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+REPRODUCTIVE ORGAN CANCER
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+LEUKOCYTE DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+FEMALE REPRODUCTIVE SYSTEM DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+SYNDROME
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+AUTOSOMAL GENETIC DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+AUTOSOMAL RECESSIVE DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+AUTOSOMAL DOMINANT DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+MALIGNANT GLIOMA
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+ARTERY DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+DISEASE OF MENTAL HEALTH
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+MYOCARDIAL INFARCTION
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+NERVOUS SYSTEM CANCER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+PARASITIC PROTOZOA INFECTIOUS DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 2}
+CORNEAL DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+PANCREATIC CANCER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+PERIPHERAL VASCULAR DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+MICROCEPHALY
+RF 0 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+BLOOD COAGULATION DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+LEUKEMIA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+MOTOR NEURON DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+INFLAMMATORY BOWEL DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+RETINITIS PIGMENTOSA
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+LIVER DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+CHRONIC OBSTRUCTIVE PULMONARY DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+OSTEOPOROSIS
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RHEUMATOID ARTHRITIS
+RF 0 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+ESSENTIAL HYPERTENSION
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+COLITIS
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+EYE AND ADNEXA DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+DISEASE BY INFECTIOUS AGENT
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+REFRACTIVE ERROR
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+CELL TYPE CANCER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+ORGAN SYSTEM CANCER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+GLOMERULONEPHRITIS
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+MELANOMA
+RF 0 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+CHARCOT-MARIE-TOOTH DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+OBSTRUCTIVE LUNG DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 3}
+BLOOD PLATELET DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+AUDITORY SYSTEM DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 3}
+HEMORRHAGIC DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+BONE INFLAMMATION DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+MOUTH DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+PANCREAS DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+ENDOCRINE SYSTEM DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+METABOLIC SYNDROME X
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+IMMUNE SYSTEM CANCER
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+CELL TYPE BENIGN NEOPLASM
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+ATRIAL FIBRILLATION
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 2}
+OROFACIAL CLEFT
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+NONSYNDROMIC DEAFNESS
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+BONE MARROW CANCER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+MALE INFERTILITY
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+IMMUNE SYSTEM DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+DIARRHEA
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+ANEMIA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+HUMAN IMMUNODEFICIENCY VIRUS INFECTIOUS DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+HYPERSENSITIVITY REACTION TYPE II DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+SCLERODERMA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+SYSTEMIC SCLERODERMA
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RETINAL DEGENERATION
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+SKIN DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+LOWER RESPIRATORY TRACT DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+MONOGENIC DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+KIDNEY CANCER
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+KIDNEY FAILURE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+COLORECTAL CANCER
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 3}
+AMINO ACID METABOLIC DISORDER
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+SYSTEMIC LUPUS ERYTHEMATOSUS
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+HEREDITARY SPASTIC PARAPLEGIA
+RF 0 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+VITILIGO
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+GLUCOSE METABOLISM DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+HYPOGONADISM
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+HEREDITARY ATAXIA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+ARTERIOSCLEROTIC CARDIOVASCULAR DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+ARTERIOSCLEROSIS
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+MYELOID LEUKEMIA
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+HEART CONDUCTION DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+NORMOCYTIC ANEMIA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+ADENOMA
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+INHERITED METABOLIC DISORDER
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+OVERNUTRITION
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+LUPUS ERYTHEMATOSUS
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+ACQUIRED METABOLIC DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+CEREBROVASCULAR DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+CARDIOVASCULAR SYSTEM DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+NEURODEGENERATIVE DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+DISEASE OF METABOLISM
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+URINARY SYSTEM CANCER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+SYNUCLEINOPATHY
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+ACUTE MYELOID LEUKEMIA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+DYSOSTOSIS
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+ATHEROSCLEROSIS
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+MINERAL METABOLISM DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+MULTIPLE SCLEROSIS
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+LIVER CANCER
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+ALZHEIMER'S DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+CARBOHYDRATE METABOLIC DISORDER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+URINARY SYSTEM DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+INTEGUMENTARY SYSTEM DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+MUSCULOSKELETAL SYSTEM DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+REPRODUCTIVE SYSTEM DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+OVARIAN CANCER
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 2}
+BREAST CANCER
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+SENSORY SYSTEM DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+INTELLECTUAL DISABILITY
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+PRIMARY BACTERIAL INFECTIOUS DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+NERVOUS SYSTEM DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+AMYOTROPHIC LATERAL SCLEROSIS
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+MOVEMENT DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+NEUROMUSCULAR DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+CONGENITAL NERVOUS SYSTEM ABNORMALITY
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+LIPID METABOLISM DISORDER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+MUSCLE TISSUE DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+CONNECTIVE TISSUE DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+B-CELL LYMPHOMA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+MITOCHONDRIAL METABOLISM DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+ANXIETY DISORDER
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+PERVASIVE DEVELOPMENTAL DISORDER
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+AUTISM SPECTRUM DISORDER
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+ADENOCARCINOMA
+RF 0 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+EYE DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+INTESTINAL DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+TOXIC ENCEPHALOPATHY
+RF 0 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+BONE DEVELOPMENT DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 3}
+BONE REMODELING DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+MUSCULAR DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+BONE DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+NEUROPATHY
+RF 0 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+MYOPATHY
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+CORONARY ARTERY DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 2}
+LYMPHOID LEUKEMIA
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+HEMATOPOIETIC SYSTEM DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+LYMPHATIC SYSTEM DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+GASTROINTESTINAL SYSTEM DISEASE
+RF 0 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+LENS DISEASE
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 3}
+HEART DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+HYPERSENSITIVITY REACTION DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+LYMPHOMA
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 3 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 3}
+COGNITIVE DISORDER
+RF 0 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+ATTENTION DEFICIT HYPERACTIVITY DISORDER
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 2}
+TOOTH DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+LIPID STORAGE DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 10, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+CENTRAL NERVOUS SYSTEM DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+BONE RESORPTION DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+MOOD DISORDER
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 2}
+PHYSICAL DISORDER
+RF 0 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+RF 1 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 2}
+RF 3 : {'max_features': 'sqrt', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 20, 'min_samples_leaf': 2}
+CHROMOSOMAL DISEASE
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 5, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 10, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'auto', 'n_estimators': 20, 'min_samples_leaf': 3}
+ARTHRITIS
+RF 0 : {'max_features': 'sqrt', 'n_estimators': 20, 'min_samples_leaf': 1}
+RF 1 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 3}
+RF 2 : {'max_features': 'auto', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 3 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 1}
+RF 4 : {'max_features': 'log2', 'n_estimators': 50, 'min_samples_leaf': 3}
