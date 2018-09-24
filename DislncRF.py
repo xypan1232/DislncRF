@@ -2241,26 +2241,6 @@ def plot_bar_overlap_fig():
     plt.title('Protein coding gene')
     plt.show()
     plt.clf()
-   
-def plot_venn_figure():
-    print 'plotting venn fig'
-    genecode_mRNA, genecode_lincRNA, gse43520_mRNA, gse43520_lincRNA,gse30352_mRNA, gse30352_lincRNA, gtex_mRNA, gtex_lincRNA = get_genes_overlap()
-    #fig = plt.figure() 
-    #ax1=fig.add_subplot(1,2,1)
-    #ax2=fig.add_subplot(1,1,1)
-    set_labels = ('E-MTAB-513', 'GSE43520', 'GSE30352', 'GTEx')
-    #pdb.set_trace()
-    v1 = venn.venn([genecode_mRNA, gse43520_mRNA, gse30352_mRNA, gtex_mRNA], set_labels, title_name = 'PCG', figsize=(7,7))
-    '''ax2.set_title("protein coding", fontsize=20)
-    v1.get_patch_by_id('100').set_color('blue')
-    v1.get_patch_by_id('010').set_color('green')
-    v1.get_patch_by_id('001').set_color('gray')
-    v1.get_patch_by_id('001').set_color('red')
-    '''
-    #for text in v1.set_labels:
-    #    text.set_fontsize(20)
-    v2 = venn.venn([genecode_lincRNA, gse43520_lincRNA, gse30352_lincRNA, gtex_lincRNA], set_labels, title_name = 'lncRNA', figsize=(7,7))
-
 
 def plot_figure(data, tissue_names, gene, dataname):
     width = 0.5
@@ -3127,46 +3107,6 @@ def get_100_lncRNAs(predict_file = 'E-MTAB-513_lncRNA.tsv'):
     gencode_lncrna = [val[1] for val in gencode_gene_scores[:100]]
     
     return set(gencode_lncrna)
-
-def case_study_IBD_venn():
-
-    gene_enst_ensg = map_enst_to_ensg()
-    #pdb.set_trace()
-    lnc2IBD = read_sign_expressed_IBD(gene_enst_ensg)
-    #lnc2IBD = read_ibd_diff_loci_lncRNA() #read_IBD_loci_lncRNA(gene_enst_ensg)
-    pred_scores = read_predict_lncrna('result/E-MTAB-513_lncRNA.tsv')# = 'result/E-MTAB-513_lncRNA.tsv')
-    #gene_scores = pred_scores['INFLAMMATORY BOWEL DISEASE']
-    gene_scores = pred_scores['DOID:0050589']
-    gene_scores.sort(reverse=True)
-    
-    all_lncrna = [val[1] for val in gene_scores]
-    lnc2IBD = lnc2IBD & set(all_lncrna)
-    print len(lnc2IBD)   
-    #for rna in lnc2IBD:
-    #    print rna
-    print 'gencode'    
-    gencode_pred_lncRNAs = get_100_lncRNAs(predict_file = 'result/E-MTAB-513_lncRNA.tsv')# = 'result/E-MTAB-513_lncRNA.tsv')
-    #pdb.set_trace() 
-    #all_lncrna = [val for val in gencode_pred_lncRNAs]
-    #for rna in gencode_pred_lncRNAs:
-    #    print rna
-    #gene_scores = pred_scores['INFLAMMATORY BOWEL DISEASE']
-    gse43520_pred_lncRNAs = get_100_lncRNAs(predict_file = 'result/GSE43520_lncRNA.tsv')
-    print 'gse43520'
-    #for rna in gse43520_pred_lncRNAs:
-    #    print rna    
-    gtex_pred_lncRNAs = get_100_lncRNAs(predict_file = 'result/GTEx_lncRNA.tsv')
-    print 'gtex'
-    #for rna in gtex_pred_lncRNAs:
-    #    print rna
-    #overlap_lnc = len(lnc2IBD & set(all_lncrna))
-    #print 'overlap lcnrna', overlap_lnc
-    #print 'total # of lcnRNA', len(gene_scores)
-    #pdb.set_trace() 
-    set_labels = ('123 lncRNAs', 'E-MTAB-513', 'GSE43520', 'GTEx')
-    #pdb.set_trace()
-    v1 = venn.venn([lnc2IBD, gencode_pred_lncRNAs, gse43520_pred_lncRNAs, gtex_pred_lncRNAs], set_labels, figsize=(8,8))
-    
     
 def get_IBD_roc(predict_file, diff_lnc, lnc2IBD):
 
@@ -3316,55 +3256,6 @@ def case_study(predict_file):
         #    print 'not in top 200 associated lncRNA' 
        
     #plot_circ_figs(gene_scores)
-
-def do_some_stas(input_file, RNAseq = True, data=0, ratio=5, confidence=3, use_mean = False, log2 = False):
-    #pdb.set_trace()
-    #print body2_map, confidence
-    disease_gene_dict, disease_name_map, whole_disease_gene_dict = read_DISEASE_database(confidence=confidence)
-    ensg_ensp_map = get_ENSP_ENSG_map()
-    tissue =False
-    if RNAseq:
-        gene_type_dict,gene_name_ensg, gene_id_position = read_gencode_gene_type()
-        if data == 0:
-            whole_data, samples = read_human_RNAseq_expression(input_file, gene_name_ensg, log2 = log2) # for microarray expression data
-        elif data ==1:
-            whole_data, samples = read_evolutionary_expression_data(input_file, use_mean = use_mean, log2 = log2)
-        elif data == 2:
-            whole_data, samples = read_average_read_to_normalized_RPKM(input_file, use_mean = use_mean, log2 = log2)
-        elif data == 3:
-            whole_data, samples = read_gtex_expression(input_file, gene_type_dict)
-        else:
-            whole_data, samples = read_tissue_database()
-            tissue = True   
-    else:
-        whole_data = read_normalized_series_file(input_file)    
-    num_dis = 0    
-    for key in disease_gene_dict:
-        disease_associated_data = []
-        labels = []
-        if RNAseq:
-            disease_associated_data, labels, atmp, mRNA_list = get_mRNA_lncRNA_expression_RNAseq_data(whole_data, disease_gene_dict[key], 
-                                                                        ensg_ensp_map, gene_type_dict, tissue=tissue)
-        else:
-            disease_associated_data, labels, atmp, mRNA_list = get_mRNA_lncRNA_expression_microarray_data(whole_data, disease_gene_dict[key], 
-                                                                                                          ensg_ensp_map)
-        #pdb.set_trace()    
-        posi_num = np.count_nonzero(labels)
-        label_len = len(labels)
-        if posi_num < 100:
-            continue
-        #if 5*posi_num > len(other_disease_mRNA):
-        #    continue   
-        num_dis = num_dis + 1
-    
-    print num_dis
-
-
-def test_obo_parser():
-    oboparser = obo_object()
-    oboparser.read_obo_file()
-    resu=oboparser.getAncestors('DOID:3459')
-    print resu
                 
 if __name__ == '__main__':
     #read_DISEASE_database()
@@ -3432,18 +3323,7 @@ if __name__ == '__main__':
             benfile = 'master_files/' + datasource[data] + '_knn.tsv'
             fw = open(benfile, 'w')
             benchmark_predict_disease_lncRNAs(outfile, fw, datasource[data], expanison = expanison, discrete =True)      
-            fw.close()             
-        elif class_type == "benchmark":
-            outfile = 'result/' + datasource[data] + '_lncRNA_knn.tsv'
-            #predict_for_lncRNA_using_mRNA(expression_file, outfile, data=data, ratio=ratio, confidence=confidence, use_mean = True, log2 = log2)
-            #plot_tissue_importance(outfile + '.imp')
-            #calculate_cc_tissue_imp()
-            print '#benchmarking predicted disease associated lncRNA using Golden-standard database'
-            benfile = 'master_files/' + datasource[data] + '.tsv'
-            fw = open(benfile, 'w')
-            benchmark_predict_disease_lncRNAs(outfile, fw, datasource[data], expanison = expanison, discrete =True)
-    
-            fw.close()                
+            fw.close()                            
         elif class_type == "plot":
             print 'expression distribution fig'
 
