@@ -7,3 +7,10 @@ known disease-associated PCGs. DislncRF first trains random forest models on dis
 for disease-associated genes. Second, it applies the trained models to predict the association scores between diseases and lncRNAs. The method was benchmarked against 
 a gold standard set and compared with other commonly-used methods. The results show that DislncRF yields promising performance and outperforms the other methods. In addition, DislncRF can automatically identify 
 disease-associated tissues.
+
+# Dependency
+<a href=https://github.com/scikit-learn/scikit-learn>sklearn</a> <br>
+
+
+# Contact
+Xiaoyong Pan (xypan172436atgmail.com)
