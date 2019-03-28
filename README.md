@@ -11,6 +11,8 @@ disease-associated tissues.
 # Dependency
 <a href=https://github.com/scikit-learn/scikit-learn>sklearn</a> <br>
 
+# Reference
+Xiaoyong Pan, Lars Juhl Jensen, Jan Gorodkin. <a href="https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/bty859/5116144?redirectedFrom=fulltext">Inferring disease-associated long non-coding RNAs using genome-wide tissue expression profiles</a>. Bioinformatics. In press.
 
 # Contact
 Xiaoyong Pan (xypan172436atgmail.com)
